@@ -1,0 +1,93 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Information</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                text-align: center;
+            }
+            input, textarea, select {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type="date"] {
+                width: calc(100% - 22px);
+                padding: 10px;
+            }
+            input[type="radio"], input[type="checkbox"] {
+                margin-right: 5px;
+            }
+            button {
+                background-color: #4caf50;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            button[type="reset"] {
+                background-color: #f44336;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <h4>Personal Information</h4> <br>
+            <input type="text" placeholder="First Name" required>
+            <br>
+            <input type="text" placeholder="Last Name" required>
+            <br>
+            <input type="email" placeholder="Enter email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+            <br>
+            <input type="password" placeholder="Enter password" required minlength="5" maxlength="8">
+            <br>
+            <input type="tel" placeholder="Enter contact" required pattern="^[789]\d{9}$" minlength="10" maxlength="12">
+            <br>
+            <input type="date">
+            <br>
+            <textarea cols="30" rows="5" placeholder="Address"></textarea>
+            <br>
+            Gender:
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            <br>
+                <!-- <input type="checkbox" required> I agree to all conditions -->
+            <br>
+            City:
+                <select>
+                    <option>None</option>
+                    <option>Mumbai</option>
+                    <option>Navi Mumbai</option>
+                    <option>Delhi</option>
+                    <option>Andhra Pradesh</option>
+                </select>
+            <br>
+            <!-- Upload Profile Picture:
+                <input type="file" accept="image/*"> -->
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear form</button>
+        </form>
+    </body>
+    </html>
+    
