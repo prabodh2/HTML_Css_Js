@@ -1,0 +1,182 @@
+<!-- <!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tabla1</title>
+        <style>
+            body {
+                background-color: red;
+            }
+            h1 {
+                color: blue;
+                text-align: center;
+            }
+            .table {
+                display: flex;
+                justify-content: center;
+            }
+            table {
+                border: 30px solid green;
+                background-color: yellow;
+            }
+            th,td {
+                border: 2px solid green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>EMPLOYEE DETAILS</h1>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>EMPID</th>
+                    <th>EMPNAME</th>
+                    <th>SALARY</th>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Ajay</td>
+                    <td>50000</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Rahul</td>
+                    <td>60000</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Amar</td>
+                    <td>70000</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid grey;
+            border-collapse: collapse;
+        }
+        th{
+            border: 1px solid grey;
+            background-color: rgb(199, 199, 199);
+        }
+        tr,td{
+            padding: 5px;
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Bob</th>
+                <th>Alice</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" style="background-color: rgb(199, 199, 199);">Favourite</td>
+                <td style="background-color: rgb(199, 199, 199);">Color</td>
+                <td>Blue</td>
+                <td>Purple</td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(199, 199, 199);">Flavour</td>
+                <td>Banana</td>
+                <td>Chocolate</td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color: rgb(199, 199, 199);">Least Favourite</td>
+                <td style="background-color: rgb(199, 199, 199);">Color</td>
+                <td>Yellow</td>
+                <td>Pink</td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(199, 199, 199);">Flavour</td>
+                <td>Mint</td>
+                <td>Walnut</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid grey;
+            border-collapse: collapse;
+        }
+
+        th,td{
+            border: 1px solid grey;
+            padding: 8px;
+        }
+
+        th{
+            background-color: rgb(199, 199, 199);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption align="center">Invoice</caption>
+        <thead>
+            <tr>
+                <th>Item / Desc.</th>
+                <th>Qty.</th>
+                <th>@</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paperclips</td>
+                <td>100</td>
+                <td>1.15</td>
+                <td>115.00</td>
+            </tr>
+            <tr>
+                <td>Paper (Case)</td>
+                <td>10</td>
+                <td>45.99</td>
+                <td>459.90</td>
+            </tr>
+            <tr>
+                <td>Wastepaper Baskets</td>
+                <td>2</td>
+                <td>17.99</td>
+                <td>35.98</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="background-color: rgb(199, 199, 199);"><b>Subtotal</b></td>
+                <td>610.88</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: rgb(199, 199, 199);"><b>Tax: </b></td>
+                <td>7%</td>
+                <td>42.76</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="background-color: rgb(199, 199, 199);"><b>Total</b></td>
+                <td>653.64</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
