@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Personal Information Form</title>
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        .outer-table {
+            max-width: 600px;
+            margin: 5px auto;
+            padding: 2px;
+            background-color:whitesmoke;
+            border-radius: 10px;
+        }
+        .inner-table {
+            width: 100%;
+            background:black;
+            border-radius: 10px;
+        }
+        .inner-table, th, td {
+            border-collapse: collapse;
+        }
+        table {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        table, th, td {
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .well{
+            background-color: aqua;
+        }
+        .sub{
+            background-color: aquamarine;
+        }
+        .form{
+            background-color: rgb(246, 102, 102);
+        }
+    </style>
+</head>
+<body>
+        <div class="outer-table">
+            <table class="inner-table">
+    <table>
+        <tr>
+            <th colspan="2" class="well">Wellcome To B.Tech CSE</th>
+        </tr>
+        <tr>
+            <td><label for="Name">Name:</label></td>
+            <td><input type="text" id="Name" name="Name" placeholder="Name" required></td>
+        </tr>
+        <tr>
+            <td><label for="phoneNumber">Phone Number:</label></td>
+            <td><input type="tel" id="phoneNumber" name="phoneNumber" placeholder="phoneNumber" pattern="^[789]\d{9}$" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="Email" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password" placeholder="password" minlength="8" maxlength="20" required></td>
+        </tr>
+        <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob" placeholder="DOB" required></td>
+        </tr>
+        <tr>
+            <td><label for="school">School:</label></td>
+            <td><input type="text" id="school" name="school" placeholder="School" required></td>
+        </tr>
+        <tr>
+            <td><label for="schoolPercentage">Percentage:</label></td>
+            <td><input type="text" id="schoolPercentage" name="schoolPercentage" placeholder="Percentage" required></td>
+        </tr>
+        <tr>
+            <td><label for="college">College:</label></td>
+            <td><input type="text" id="college" name="college" placeholder="College" required></td>
+        </tr>
+        <tr>
+            <td><label for="collegePercentage">Percentage:</label></td>
+            <td><input type="text" id="collegePercentage" name="collegePercentage" placeholder="Percentage" required></td>
+        </tr>
+        <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="fatherName">Father's Name:</label></td>
+            <td><input type="text" id="fatherName" name="fatherName" placeholder="Father`s Name" required></td>
+        </tr>
+        <tr>
+            <td><label for="fatherEmail">Father's Email :</label></td>
+            <td><input type="email" id="fatherEmail" name="fatherEmail" placeholder="Father's Email"></td>
+        </tr>
+        <tr>
+            <td><label for="fatherPhoneNumber">Father's Phone Number :</label></td>
+            <td><input type="tel" id="fatherPhoneNumber" name="fatherPhoneNumber" placeholder="Father's Phone Number" pattern="^[789]\d{9}$"></td>
+        </tr>
+        <tr>
+            <td><label for="motherName">Mother's Name:</label></td>
+            <td><input type="text" id="motherName" name="motherName" placeholder="Mother's Name" ></td>
+        </tr>
+        <tr>
+            <td><label for="motherPhoneNumber">Mother's Phone Number :</label></td>
+            <td><input type="tel" id="motherPhoneNumber" name="motherPhoneNumber" placeholder="Mother's Phone Number" pattern="^[789]\d{9}$"></td>
+        </tr>
+        <tr>
+            <td><label for="state">State:</label></td>
+            <td><input type="text" id="state" name="state" placeholder="state" required></td>
+        </tr>
+        <tr>
+            <td><label for="District">District:</label></td>
+            <td><input type="text" id="District" name="District" placeholder="District" required></td>
+        </tr>
+        <tr>
+            <td><label for="city">City/Town:</label></td>
+            <td><input type="text" id="city" name="city" placeholder="City" required></td>
+        </tr>
+        <tr>
+            <td><label for="Address1">Address 1:</label></td>
+            <td><input type="text" id="Address1" name="Address1" placeholder="Address 1" required></td>
+        </tr>
+        <tr>
+            <td><label for="Address2">Address 2:</label></td>
+            <td><input type="text" id="Address2" name="Address2" placeholder="Address 2"></td>
+        </tr>
+        <tr>
+            <td colspan="4" rowspan="6">
+                <button type="submit" class="sub">Submit</button>
+                <button type="reset" class="form">Clear form</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
+
